@@ -3,3 +3,5 @@
 [0616/161308.516:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: O comprimento do registro de informações especificado não coincide com o comprimento necessário à classe de informações especificada. (0xc0000004)
 [0618/193931.616:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0618/194127.454:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0620/003837.615:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: O comprimento do registro de informações especificado não coincide com o comprimento necessário à classe de informações especificada. (0xc0000004)
+[0620/004214.080:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: O comprimento do registro de informações especificado não coincide com o comprimento necessário à classe de informações especificada. (0xc0000004)
