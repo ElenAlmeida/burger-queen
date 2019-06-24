@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../../components/button/Button';
 import Input from '../../components/input/Input';
 import {Link} from 'react-router-dom';
-import './cozinha.css'
+import './kitchen.css'
 
 const Cozinha = () =>{
     return(

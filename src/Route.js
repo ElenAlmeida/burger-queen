@@ -5,7 +5,8 @@ import Login from './pages/login/Login';
 import Home from './pages/Home/Home';
 import Register from './pages/register/register';
 import Salao from './pages/Salao/Salao';
-import Cozinha from './pages/Cozinha/Cozinha';
+import Cozinha from './pages/kitchen/kitchen';
+
 
 // const auth = firebase.auth();
 // const user = auth.currentUser;

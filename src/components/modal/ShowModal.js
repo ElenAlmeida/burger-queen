@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Modal from './Modal';
-import useModal from './useModal';
+import useModal from './UseModal';
+import Login from '../../pages/login/Login'
 
 const ShowModal = () =>{
   const {isShowing, toggle} = useModal();
@@ -10,7 +11,10 @@ const ShowModal = () =>{
 		<>
 			<div className='app' > 
 				<button className='btn-default' onClick={toggle}> Clique me</button>
-				<Modal isShowing={isShowing} hide={toggle}></Modal>
+				<Modal isShowing={isShowing} hide={toggle}>
+					<Login></Login>
+					
+				</Modal>
 			</div>
 		</>        
   );

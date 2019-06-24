@@ -7,52 +7,52 @@ import './Salao.css'
 const db = firebase.firestore();
 
  function Salao () {	
-	const [item, setItem] = useState('');
-	const [price, setPrice] = useState('')
-	const [products, setProducts] = useState([]);
-	const [commands, setCommands] = useState([]);
+		const [item, setItem] = useState('');
+		const [price, setPrice] = useState('')
+		const [products, setProducts] = useState([]);
+		const [commands, setCommands] = useState([]);
+		const [xuxu, setXuxu] = useState([]);
 	 
 	
-	useEffect(() => { 		
-		db.collection('breakfeast').get().then((querySnapshot) => {			
-		  const data = querySnapshot.docs.map(doc => doc.data());       
-		  setProducts([...data,
-			{item, price}
-		  ])    
-		})    
-	}, []); 
-		
-		useEffect(() => { 
-			db.collection('newOrder').get().then((querySnapshot) => {
-				const data = querySnapshot.docs.map(doc => doc.data());       
+		useEffect(() => { 		
+			db.collection('breakfeast').get().then((querySnapshot) => {			
+				const data = querySnapshot.docs.map(doc => doc.data()); 		     
 				setProducts([...data,
 				{item, price}
 				])    
-			 })    
-			},[]); 
-	  
-	  const addItem = (e) => {
-		e.preventDefault();    
-		db.collection('breakfeast').add({item, price})
-		setProducts([ ...products,
-		  {item, price}
-		]); 
-		setItem('')
-		setPrice('')		
-		} 
-		
-	const order	= (event) =>{
-		event.preventDefault();
-		db.collection('newOrder').add({item, price})
-		setCommands([
-		  ...commands,
-		  {item, price}
-		]); 
-		setItem('')
-		setPrice('')		
-		} 	
+			})    
+		}, []); 
 
- console.log (products)
+	  
+		const addItem = (e) => {
+			e.preventDefault();    
+			db.collection('breakfeast').add({item, price})
+			setProducts([ ...products,
+				{item, price}
+			]); 
+			setItem('')
+			setPrice('')		
+		};
+
+		const newItem = (e) => {
+			e.preventDefault();
+			db.collection('newCommands').add({commands})
+			setXuxu([ ...xuxu,
+				{commands}
+			]); 
+			setCommands([]);
+		};	
+
+		const algumaCoisa = (element) => {
+			const banana={element};
+			setCommands(commands.concat(banana));		
+		}			
+
+		const removeItem = (index) =>{			
+			const arr = commands;
+			arr.splice(index,1);
+			setCommands([...arr]);		
+		}
 
   return(
 	  <>
@@ -62,16 +62,33 @@ const db = firebase.firestore();
 				<Button text='Enviar'></Button>
       </form>
 		  <section className='divMenu'>
+			  <ul>
 				{
-					products.map((e,i)=> 
-						<p key={i}>{e.item}</p>						
+					products.map((element) =>
+					
+					<Button  key={element.item} text={element.item}  onClick={() => algumaCoisa(element)}></Button>		
+									
 					)						        
 				}
-				</section>  	 	
+				</ul>
+			</section>
+			<section>
+				<ul>
+					{					
+						commands.map((ele,i) =>
+							<li>
+								{ele.element.item}
+								<Button key={ele.element.item} text='remover' onClick={() => removeItem(i)}></Button> 
+							</li>																			
+						)						
+					}
+				</ul>	
+			</section>	
+			<section>
+				<Button text='Clicar' onClick={newItem}></Button>
+			</section>			 	
 	  </>
   )
 };
-
-
 
 export default Salao;

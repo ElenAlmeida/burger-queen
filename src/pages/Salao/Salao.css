@@ -8,3 +8,21 @@ h1{
 .btn{
     background: blue;
 }
+
+.product-info{
+    width: 200px;
+    margin: 20px auto 0;   
+    background: #fff;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 5px;    
+}
+
+.product-info-Two{
+    width: 300px;
+    margin: 20px auto 0;   
+    background: blue;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 5px;    
+}

@@ -1,5 +1,30 @@
 .modalWrapper{
     width: 50rem;
-    height: 30rem;
-    border: solid 1px black;
+    height: 25rem;
+    display: grid;       
+	grid-template-columns: 10rem 30rem 10rem;
+	grid-template-rows: 2rem 21rem 2rem;
+	background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  
+    background: linear-gradient(to right, #F0CB35, #C02425);
+}
+.modalHeader{
+	display: grid;
+	grid-column-start: 3;		
+}
+
+.modalCloseBtn{
+	width: 2rem;
+	height: 2rem;
+	grid-column-start: 3;
+	font-size: 20px;
+	color: red;
+	border: none;
+	background: none;
+}
+
+.modalMain{
+	height: 16rem;
+	grid-column-start: 2;
+	grid-row-start: 2;
+	height: 18rem;	
 }

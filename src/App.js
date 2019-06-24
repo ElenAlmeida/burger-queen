@@ -5,8 +5,8 @@ import Login from './pages/login/Login';
 import Register from './pages/register/register';
 import Home from './pages/Home/Home';
 import Routes from './Route';
-import Tab from './components/tab/Tab';
 import ShowModal from './components/modal/ShowModal';
+
 
 
 class App extends React.Component {
@@ -15,8 +15,11 @@ class App extends React.Component {
   render() {
     return (
       <main>        
-        <Routes></Routes>                     
+        {/* <Routes></Routes>                      */}
         {/* <ShowModal></ShowModal> */}
+        <Home></Home>
+        
+        {/* <Register></Register> */}
       </main>
     );
   }

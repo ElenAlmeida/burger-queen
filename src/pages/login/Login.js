@@ -27,16 +27,16 @@ export default function Login (props) {
     }     
       
     return (
-      <main className='main'>
-        <form className='form' onSubmit={acess}>
-          <Input className='input' placeholder='Digite seu email' value={email} onChange={(e) => setEmail(e.target.value)} ></Input>
-          <Input className='input' placeholder='Digite sua senha' value={password} onChange={(e) =>setPassword(e.target.value)}></Input>
-          <select className='section-btn' onChange={(e) => setSector(e.target.value)}>
-            <option className='input-section'>Salão</option>
-            <option className='input-section'>Cozinha</option>             
+      <main className='mainLogin'>
+        <form className='formLogin' onSubmit={acess}>
+          <Input className='input-Login' placeholder='Digite seu email' value={email} onChange={(e) => setEmail(e.target.value)} ></Input>
+          <Input className='input-Login' placeholder='Digite sua senha' value={password} onChange={(e) =>setPassword(e.target.value)}></Input>
+          <select className='section-btn-Login' onChange={(e) => setSector(e.target.value)}>
+            <option value='hall' className='input-section-Login'>Salão</option>
+            <option value='kitchen' className='input-section-Login'>Cozinha</option>             
           </select>               
-          <section className='section-btn'>
-            <Button className='btn' text='Login'></Button>
+          <section className='section-btn-Login'>
+            <Button className='buttonLogin' text='Login'></Button>
           </section>                       
         </form>        
       </main>

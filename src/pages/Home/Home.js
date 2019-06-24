@@ -1,18 +1,26 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './home.css';
+import Login from '../login/Login';
+import Register from '../register/register';
 
-export default class Home extends React.Component{
-	render(){
-		return(
-			<main className='main'>	
-				<section class='container'>	
-					<h1 className='title'>Burguer Queen <i class="fas fa-crown"></i></h1>	
-					<Link to='/Login' className='direcionar'>Login</Link>
-					<Link to='/Register' className='direcionar'>Registrar</Link>
-				</section>						
-			</main>
+const Home =() => {
+		return(	
+			<main>	
+				<h1>Burguer Queen</h1>
+				<section className='mainHome'>					
+					<section className='sectionHomeLogin'>					
+						<Login></Login>										
+					</section>
+					<section className='sectionHomeRegister'>					
+							<Register></Register>						
+					</section>
+				</section>
+			</main>	
 		);
-	};  
+	 
 };
+
+export default Home;
+
 
