@@ -1,43 +1,81 @@
+*{ 
+  margin: 0;
+	padding: 0;	 
+}
+
 .mainLogin{
-	height: 18rem;
-	width: 20rem;
+	width: 100vw;
+	height: 80vw;
 	display: grid;
-	grid-template-columns: 1rem 18rem 1rem;	
-	grid-template-rows: 1rem 16rem 1rem;	
+	grid-template-columns: 25vw 50vw 25vw;
+	grid-template-rows: 10vw 50vw 25vw;	
+	background-image: url("../../imagem/259-min.jpg");	
+	background-size: 100vw 100vw;
+	background-repeat: no-repeat;	
 }
 .formLogin{
 	display: grid;
-	height: 16rem;
+	height: 30vw;
 	grid-row-start: 2;
-	grid-column-start: 2;
-	grid-template-rows: 4rem 4rem 4rem 4rem;
+	grid-column-start: 2;	
 	justify-content: center;
 	align-items: center;		
 }
-.input-Login, .section-btn-Login{
-	height: 2rem;
-	width: 16rem;
-	border: none;
-	font-family: sans-serif;
-	border-radius: 1rem;
+.input-Login{
+	width: 25vw;
+  height: 3vw;
+  margin: 1vw;
+	border: solid 4px white;
+	background: #42556C;
+	font-family: 'Hind', sans-serif;
+	color: white;
+	font-weight: bolder;
+	font-size: 20px;  
+  text-align: center;
+  outline: none;
 }
-.section-btn-Login{
+.section-option-Login{
+	width: 26vw;
+  height: 3vw;
+  margin: 1vw;
+	border: solid 4px white;
+	background: #42556C;  
+  text-align-last: center;
+  color: rgb(56, 53, 53);
+	outline: none;
+	font-family: 'Hind', sans-serif;
+	color: white;
+	font-size: 20px;
+	font-weight: bolder;	
+}
+
+.buttonLogin, .linkLogin{
+	display: block;
+	width: 25vw;
+	height: 4vw;
+	margin: 1vw;
+	border: solid 6px #3C4A57;
+	border-radius: 5px;
+	background: white;
+	color: #3C4A57;
+	font-family: 'Hind', sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+	text-align: center;	
+}
+.sectionLink{
 	display: grid;
-	justify-content: center;
-	align-items: center;	
+	grid-template-columns: 14vw 12vw;
 }
 
-.input-section-Login{
-	justify-content: center;
+.linkLogin{
+	display: inline;
+	height: 3vw;
+	width: 10vw;
 }
 
-.buttonLogin{
-	border: none;
-	width: 10rem;
-	height: 2rem;
-	border-radius: 1rem;	
-}
-.buttonLogin:hover{
+
+.buttonLogin:hover, .linkLogin:hover{
 	background: rgb(228, 222, 138);
 	cursor: pointer;
 	border: none;

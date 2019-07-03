@@ -1,85 +1,57 @@
-/* .main{
-	display: grid;
-	width: 100vw;	
-	justify-items: center;
-	align-items: center;
-	background: #bd4324;
+*{ 
+  margin: 0;
+	padding: 0;	 
 }
-
-.form{
-	display: grid;	
-	grid-template-columns: 10vw 50vw 10vw;
-	width: 80vw;
-	height: 30vw;	
-	align-items: center;
-	justify-content: center;
-	border: solid 1px rgb(201, 194, 194);
-}
-
-.input{
-  font-family: sans-serif;
-  grid-column-start: 2;
-  margin: 2vw;
-  width: 50vw;
-  height: 2vw;
-  border: none;
-  border-bottom: solid 1px #8a0909;  
-}
-
-.btn{	
-	grid-column-start: 2 ;	
-	width: 30vw;
-	height: 3vw; 
-	color: rgb(14, 1, 1);
-	background: #f19f34;
-	border-radius: 7px;
-	border: 0;	
-}
-
-.section-btn{
-	grid-column-start: 2 ;
-	display: grid;
-	grid-template-columns: 10vw 10vw 10vw;	
-} */
 
 .mainRegister{
-	height: 30rem;
-	width: 20rem;
+	width: 100vw;
+	height: 80vw;
 	display: grid;
-	grid-template-columns: 1rem 18rem 1rem;	
-	grid-template-rows: 1rem 16rem 1rem;	
+	grid-template-columns: 25vw 50vw 25vw;
+	grid-template-rows: 10vw 50vw 25vw;	
+	background-image: url("../../imagem/259-min.jpg");	
+	background-size: 100vw 100vw;
+	background-repeat: no-repeat;	
 }
 .formRegister{
 	display: grid;
-	height: 26rem;
+	height: 30vw;
 	grid-row-start: 2;
-	grid-column-start: 2;
-	grid-template-rows: 4rem 4rem 4rem 4rem 4rem 4rem;
+	grid-column-start: 2;	
 	justify-content: center;
 	align-items: center;		
 }
-.inputHome, .sectionSelectHome{
-	height: 2rem;
-	width: 16rem;
-	border: none;
-	font-family: sans-serif;
-	border-radius: 1rem;
-}
-.sectionSelectHome{
-	display: grid;
-	justify-content: center;
-	align-items: center;	
-}
-
-.sectionSelectHome{
-	justify-content: center;
+.inputHome, .sectionSelectRegister{
+	width: 25vw;
+  height: 3vw;
+  margin: 1vw;
+	border: solid 4px white;
+	background: #42556C;
+	font-family: 'Hind', sans-serif;
+	color: white;
+	font-weight: bolder;
+	font-size: 20px; 
+	text-align-last: center;  
+  outline: none;
 }
 
-.btnRegisterHome{
-	border: none;
-	width: 10rem;
-	height: 2rem;
-	border-radius: 1rem;	
+.btnRegisterHome, .linkRegister{
+	display: block;
+	width: 25vw;
+	height: 4vw;
+	margin: 1vw;
+	border: solid 6px #3C4A57;
+	border-radius: 5px;
+	background: white;
+	color: #3C4A57;
+	font-family: 'Hind', sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+	text-align: center;	
+}
+.linkRegister{
+	width: 24vw;
+	height: 3vw;
 }
 .btnRegisterHome:hover{
 	background: rgb(228, 222, 138);

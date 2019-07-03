@@ -1,26 +1,62 @@
+*{ 
+  margin: 0;
+	padding: 0;	 
+}
 .mainHome{
-	display: grid;	
-	width: 100rem;	
-	height: 100rem;
-	grid-template-columns: 10rem 20rem 15rem 20rem;
-	grid-auto-rows: 7rem 18rem 5rem 20rem 25rem;
-	background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  
-  background: linear-gradient(to right, #F0CB35, #C02425);
+	width: 100vw;
+	height: 80vw;
+	display: grid;
+	grid-template-columns: 25vw 50vw 25vw;
+	grid-template-rows: 10vw 50vw 25vw;	
+	background-image: url("../../imagem/259-min.jpg");	
+	background-size: 100vw 100vw;
+	background-repeat: no-repeat;
 }
 
-.sectionHomeLogin{
+.header-Home{
+	display: grid;	
+	text-align: center;	
+	grid-column-start: 2;
+	align-items: center;
+	justify-content: center;
+	/* border: solid 2px white; */
+	
+}
+.titleHomeLogin{	
+	justify-content: center;
+	align-items: center;
+	color: #3C4A57;
+	font-size: 5vw;
+	border: solid 1px #D5946D;
+	background: #D5946D;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-weight: bolder;
+	border-radius: 5px;	
+}
+
+.sectionHome{
+	height: 20vw;
+	display: grid;
+	justify-content: center;
+	align-items: center;
 	grid-column-start: 2;
 	grid-row-start: 2;
-	display: grid;	
-	justify-content: center;	
+
+}
+.btn_Home{
+	display: block;
+	width: 25vw;
+	height: 4vw;
+	border: solid 6px #3C4A57;
+	border-radius: 5px;
+	background: white;
+	color: #3C4A57;
+	font-family: 'Hind', sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+	text-align: center;	
 }
 
-.sectionHomeRegister{
-	display: grid;
-	grid-row-start: 2;
-	grid-column-start: 4;	
-	justify-items: center;
-	align-items: center;
-}
+
 
 

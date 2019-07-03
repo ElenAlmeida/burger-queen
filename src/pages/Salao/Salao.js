@@ -80,10 +80,11 @@ const db = firebase.firestore();
 								{ele.element.item}
 								<Button key={ele.element.item} text='remover' onClick={() => removeItem(i)}></Button> 
 							</li>																			
-						)						
+						)										
 					}
 				</ul>	
-			</section>	
+			</section>
+			
 			<section>
 				<Button text='Clicar' onClick={newItem}></Button>
 			</section>			 	
